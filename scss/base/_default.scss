@@ -1,0 +1,16 @@
+$fontFamily: 'Ubuntu', sans-serif;
+$fontSize: toRem(16);
+
+$mainColor: var(--text-primary);
+
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContainer: 1170;
+$containerPadding: 30;
+
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+$pc: toEm($containerWidth);
+$tablet: toEm(991.98);
+$mobile: toEm(767.98);
+$mobileSmall: toEm(479.98);

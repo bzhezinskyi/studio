@@ -1,0 +1,23 @@
+:root {
+    // --primary: #827e7c;
+    // --secondary: #a7a8ac;
+    --accent: #c2e9ff;
+    // --inverse: #ffff3f;
+    // --transparent: #ffffff00;
+
+    --bg-primary: #d4d9df;
+    --bg-secondary: #bdc4c7;
+    --bg-accent: #c2e9ff;
+    // --bg-inverse: #2f303a;
+    // --bg-transparent: #ffffff00;
+    // --bg-accent-transparent: #fbe115d0;
+
+    --text-primary: #424242;
+    // --text-primary: #827e7c;
+    --text-secondary: #a7a8ac;
+    --text-accent: #c2e9ff;
+    // --text-inverse: #ffffff;
+    --text-shadow: 0 0 8px rgba(0, 0, 0, 0.5), 0 0 24px rgba(0, 0, 0, 0.3);
+
+    --container-width: $containerWidth;
+}

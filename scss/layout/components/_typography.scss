@@ -1,0 +1,30 @@
+[class*='__title'] {
+    font-weight: 900;
+    font-size: toRem(96);
+
+    // text-transform: uppercase;
+
+    text-align: center;
+    text-shadow: var(--text-shadow);
+
+    color: var(--text-accent);
+
+    margin-bottom: toRem(28);
+}
+
+[class*='__subtitle'] {
+    font-weight: 900;
+    font-size: toRem(56);
+
+    // text-transform: uppercase;
+
+    // text-align: center;
+    text-shadow: var(--text-shadow);
+
+    color: var(--text-accent);
+
+    margin-bottom: toRem(28);
+}
+[class*='__txt'] {
+    font-size: toRem(24);
+}

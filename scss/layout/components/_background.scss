@@ -1,0 +1,8 @@
+body {
+    background: var(--bg-primary);
+    background: linear-gradient(
+        90deg,
+        var(--bg-primary) 50%,
+        var(--bg-secondary) 100%
+    );
+}

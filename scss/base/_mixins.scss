@@ -1,0 +1,18 @@
+@function toRem($px, $current: 16) {
+    $result: math.div($px, $current) + rem;
+    @return $result;
+}
+
+@function toEm($px, $current: 16) {
+    $result: math.div($px, $current) + em;
+    @return $result;
+}
+
+// @function mins($type) {
+//   $result: math.div(
+//     @media
+//       (
+//         min-widht: $type,
+//       ){}
+//   );
+// }
