@@ -102,7 +102,7 @@ h6 {
 
 body {
   background: var(--bg-primary);
-  background: linear-gradient(90deg, var(--bg-primary) 50%, var(--bg-secondary) 100%);
+  background: linear-gradient(90deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 }
 
 .wrapper {
@@ -124,43 +124,94 @@ body {
   min-width: 0;
 }
 
+[class*=__container] {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 1.25rem 0.9375rem 0 0.9375rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
 [class*=__title] {
   font-weight: 900;
-  font-size: 6rem;
+  font-size: 3rem;
+  text-transform: uppercase;
   text-align: center;
   text-shadow: var(--text-shadow);
   color: var(--text-accent);
-  margin-bottom: 1.75rem;
+  margin-top: 1rem;
+}
+@media (min-width: 48rem) {
+  [class*=__title] {
+    font-size: 6rem;
+    margin-top: 1.75rem;
+  }
 }
 
 [class*=__subtitle] {
   font-weight: 900;
-  font-size: 3.5rem;
+  font-size: 2.25rem;
   text-shadow: var(--text-shadow);
   color: var(--text-accent);
-  margin-bottom: 1.75rem;
+  margin-top: 1rem;
+}
+@media (min-width: 48rem) {
+  [class*=__subtitle] {
+    font-size: 3.5rem;
+    margin-top: 1.75rem;
+  }
 }
 
 [class*=__txt] {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+@media (min-width: 48rem) {
+  [class*=__txt] {
+    font-size: 1.5rem;
+    margin-top: 1.75rem;
+  }
 }
 
 .hero {
-  position: relative;
   min-height: 100vh;
-  overflow: hidden;
+}
+.hero__container {
+  min-height: 100vh;
+  position: relative;
+}
+@media (min-width: 48rem) {
+  .hero__txt {
+    width: 60%;
+  }
+}
+.hero__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 60vh;
+}
+@media (min-width: 48rem) {
+  .hero__img {
+    height: 70vh;
+  }
+}
+@media (min-width: 64rem) {
+  .hero__img {
+    height: 80vh;
+  }
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../image/hero.jpg");
-  background-size: contain;
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  z-index: -1;
+.course__txt {
+  font-weight: 700;
+}
+.course__item {
+  font-size: 1.25rem;
+  margin-top: 0.875rem;
+}
+@media (min-width: 48rem) {
+  .course__item {
+    font-size: 1.25rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,23 @@
+.course {
+    &__container {
+    }
+    &__details {
+    }
+    &__title {
+    }
+    &__subtitle {
+    }
+    &__txt {
+        font-weight: 700;
+    }
+    &__list {
+    }
+    &__item {
+        font-size: toRem(20);
+
+        margin-top: toRem(14);
+        @include ms(tab-s) {
+            font-size: toRem(20);
+        }
+    }
+}

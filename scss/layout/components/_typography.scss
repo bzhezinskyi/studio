@@ -1,20 +1,25 @@
 [class*='__title'] {
     font-weight: 900;
-    font-size: toRem(96);
+    font-size: toRem(48);
 
-    // text-transform: uppercase;
+    text-transform: uppercase;
 
     text-align: center;
     text-shadow: var(--text-shadow);
 
     color: var(--text-accent);
 
-    margin-bottom: toRem(28);
+    margin-top: toRem(16);
+
+    @include ms(tab-s) {
+        font-size: toRem(96);
+        margin-top: toRem(28);
+    }
 }
 
 [class*='__subtitle'] {
     font-weight: 900;
-    font-size: toRem(56);
+    font-size: toRem(36);
 
     // text-transform: uppercase;
 
@@ -23,8 +28,19 @@
 
     color: var(--text-accent);
 
-    margin-bottom: toRem(28);
+    margin-top: toRem(16);
+
+    @include ms(tab-s) {
+        font-size: toRem(56);
+        margin-top: toRem(28);
+    }
 }
 [class*='__txt'] {
-    font-size: toRem(24);
+    font-size: toRem(20);
+
+    margin-top: toRem(16);
+    @include ms(tab-s) {
+        font-size: toRem(24);
+        margin-top: toRem(28);
+    }
 }

@@ -1,19 +1,43 @@
 .hero {
-    position: relative;
     min-height: 100vh;
-    overflow: hidden;
+    // overflow: hidden;
+    &__container {
+        min-height: 100vh;
+        position: relative;
+    }
+    &__title {
+    }
+    &__subtitle {
+    }
+    &__txt {
+        @include ms(tab-s) {
+            width: 60%;
+        }
+    }
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 60vh;
+        @include ms(tab-s) {
+            height: 70vh;
+        }
+        @include ms(desc-s) {
+            height: 80vh;
+        }
+    }
 }
 
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../image/hero.jpg');
-    background-size: contain;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
+// .hero::after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: 100vw;
+//     height: 100vh;
+//     background-image: url('../image/hero.png');
+//     background-size: contain;
+//     background-position: right bottom;
+//     background-repeat: no-repeat;
+//     z-index: -1;
+// }

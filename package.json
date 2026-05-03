@@ -1,12 +1,12 @@
 {
-  "name": "studio",
-  "version": "1.0.0",
-  "description": "Мій проект з HTML, SCSS та JS",
-  "scripts": {
-    "build-css": "sass scss/styles.scss css/styles.css",
-    "watch-css": "sass --watch scss/styles.scss css/styles.css"
-  },
-  "devDependencies": {
-    "sass": "^1.69.5"
-  }
+    "name": "studio",
+    "version": "1.0.0",
+    "description": "Мій проект з HTML, SCSS та JS",
+    "scripts": {
+        "build-css": "sass scss/styles.scss css/styles.css",
+        "watch-css": "sass --watch scss/styles.scss css/styles.css"
+    },
+    "devDependencies": {
+        "sass": "^1.69.5"
+    }
 }
