@@ -204,6 +204,10 @@ body {
   }
 }
 
+[class*=__txt--bold] {
+  font-weight: 700;
+}
+
 .hero {
   min-height: 100vh;
 }
@@ -233,15 +237,6 @@ body {
   }
 }
 
-.course__txt {
-  font-weight: 700;
-}
 .course__item {
-  font-size: 1.25rem;
   margin-top: 0.875rem;
-}
-@media (min-width: 48rem) {
-  .course__item {
-    font-size: 1.25rem;
-  }
 }/*# sourceMappingURL=styles.css.map */

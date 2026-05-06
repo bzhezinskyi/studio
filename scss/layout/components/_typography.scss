@@ -63,3 +63,6 @@
         margin-top: toRem(28);
     }
 }
+[class*='__txt--bold'] {
+    font-weight: 700;
+}
