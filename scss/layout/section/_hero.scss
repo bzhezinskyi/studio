@@ -18,7 +18,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        height: 60vh;
+        height: toRem(500);
         @include ms(tab-s) {
             height: 70vh;
         }

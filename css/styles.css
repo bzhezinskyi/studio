@@ -135,12 +135,22 @@ body {
 
 [class*=__title] {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
   text-shadow: var(--text-shadow);
   color: var(--text-accent);
   margin-top: 1rem;
+}
+@media (min-width: 23.4375rem) {
+  [class*=__title] {
+    font-size: 2.625rem;
+  }
+}
+@media (min-width: 30rem) {
+  [class*=__title] {
+    font-size: 3rem;
+  }
 }
 @media (min-width: 48rem) {
   [class*=__title] {
@@ -151,10 +161,20 @@ body {
 
 [class*=__subtitle] {
   font-weight: 900;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   text-shadow: var(--text-shadow);
   color: var(--text-accent);
   margin-top: 1rem;
+}
+@media (min-width: 23.4375rem) {
+  [class*=__subtitle] {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 30rem) {
+  [class*=__subtitle] {
+    font-size: 2.25rem;
+  }
 }
 @media (min-width: 48rem) {
   [class*=__subtitle] {
@@ -164,8 +184,18 @@ body {
 }
 
 [class*=__txt] {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-top: 1rem;
+}
+@media (min-width: 23.4375rem) {
+  [class*=__txt] {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 30rem) {
+  [class*=__txt] {
+    font-size: 1.25rem;
+  }
 }
 @media (min-width: 48rem) {
   [class*=__txt] {
@@ -190,7 +220,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 60vh;
+  height: 31.25rem;
 }
 @media (min-width: 48rem) {
   .hero__img {

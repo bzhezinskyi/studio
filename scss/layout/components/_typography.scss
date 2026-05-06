@@ -1,6 +1,6 @@
 [class*='__title'] {
     font-weight: 900;
-    font-size: toRem(48);
+    font-size: toRem(32);
 
     text-transform: uppercase;
 
@@ -11,6 +11,12 @@
 
     margin-top: toRem(16);
 
+    @include ms(mob-m) {
+        font-size: toRem(42);
+    }
+    @include ms(mob-l) {
+        font-size: toRem(48);
+    }
     @include ms(tab-s) {
         font-size: toRem(96);
         margin-top: toRem(28);
@@ -19,7 +25,7 @@
 
 [class*='__subtitle'] {
     font-weight: 900;
-    font-size: toRem(36);
+    font-size: toRem(28);
 
     // text-transform: uppercase;
 
@@ -30,15 +36,28 @@
 
     margin-top: toRem(16);
 
+    @include ms(mob-m) {
+        font-size: toRem(32);
+    }
+    @include ms(mob-l) {
+        font-size: toRem(36);
+    }
     @include ms(tab-s) {
         font-size: toRem(56);
         margin-top: toRem(28);
     }
 }
 [class*='__txt'] {
-    font-size: toRem(20);
+    font-size: toRem(16);
 
     margin-top: toRem(16);
+
+    @include ms(mob-m) {
+        font-size: toRem(18);
+    }
+    @include ms(mob-l) {
+        font-size: toRem(20);
+    }
     @include ms(tab-s) {
         font-size: toRem(24);
         margin-top: toRem(28);
