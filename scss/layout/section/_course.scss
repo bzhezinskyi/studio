@@ -3,10 +3,43 @@
     }
     &__details {
     }
+    &__details[open] .course__subtitle::before {
+        transform: rotate(90deg) translateX(-50%);
+    }
+
     &__title {
     }
     &__subtitle {
         cursor: pointer;
+        list-style: none;
+        position: relative;
+        padding-left: 1.75rem;
+        transition: all $cubic;
+
+        &:hover,
+        &:focus {
+            color: var(--text-hover);
+            // text-shadow: var(--text-shadow-light);
+        }
+
+        @include ms(mob-m) {
+            padding-left: 2rem;
+        }
+        @include ms(mob-l) {
+            padding-left: 2.1rem;
+        }
+        @include ms(tab-s) {
+            padding-left: 3rem;
+        }
+
+        &::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all $cubic;
+        }
     }
     &__txt {
         // font-weight: 700;
