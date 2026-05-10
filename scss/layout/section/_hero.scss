@@ -1,6 +1,6 @@
 .hero {
     min-height: 100vh;
-    // overflow: hidden;
+    padding: toRem(32) 0;
     &__container {
         min-height: 100vh;
         position: relative;

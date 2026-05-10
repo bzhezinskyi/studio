@@ -9,7 +9,7 @@
 
     color: var(--text-accent);
 
-    margin-top: toRem(16);
+    // margin-top: toRem(16);
 
     @include ms(mob-m) {
         font-size: toRem(42);
@@ -19,7 +19,7 @@
     }
     @include ms(tab-s) {
         font-size: toRem(96);
-        margin-top: toRem(28);
+        // margin-top: toRem(28);
     }
 }
 

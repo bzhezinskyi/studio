@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
     <head>
         <meta charset="UTF-8" />
@@ -26,11 +26,38 @@
                     </div>
                 </section>
                 <section class="course">
-                    <div class="course__container"></div>
+                    <div class="course__container">
+                        <h2 class="course__title">Курси</h2>
+                    </div>
                 </section>
             </main>
             <footer></footer>
         </div>
+        <!-- Модальне вікно -->
+        <div id="modal" class="modal">
+            <div class="modal__content">
+                <span class="modal__close">&times;</span>
+                <h2 class="modal__subtitle">
+                    Оберіть зручний спосіб, щоб звʼязатися зі мню
+                </h2>
+                <a
+                    class="modal__btn--modal"
+                    href="https://t.me/svyripa_nails"
+                    target="_blank"
+                    >Telegram</a
+                >
+                <a
+                    class="modal__btn--modal"
+                    href="https://www.instagram.com/svyripa_nails"
+                    target="_blank"
+                    >Instagram</a
+                >
+                <a class="modal__btn--modal" href="tel:+380123456789"
+                    >Зателефонувати</a
+                >
+            </div>
+        </div>
         <script src="js/script.js"></script>
+        <script src="js/modal.js"></script>
     </body>
 </html>

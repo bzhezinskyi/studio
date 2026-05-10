@@ -45,6 +45,15 @@ function renderCourses(coursesData) {
 
                 details.appendChild(list)
             }
+
+            // Додаємо кнопку, якщо вона вказана в JSON
+            if (section.button) {
+                const button = document.createElement('button')
+                button.className = 'course__btn'
+                button.textContent = section.button
+                button.addEventListener('click', openModal) // Додаємо обробник для відкриття модального вікна
+                details.appendChild(button)
+            }
         })
 
         courseContainer.appendChild(details)

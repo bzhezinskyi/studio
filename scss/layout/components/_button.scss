@@ -1,0 +1,50 @@
+[class*='__btn'] {
+    display: inline-block;
+    padding: toRem(12) toRem(24);
+
+    background-color: var(--bg-accent);
+    color: var(--text-primary);
+    box-shadow: var(--text-shadow);
+    border: 1px solid var(--bg-accent);
+    border-radius: toRem(16);
+
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all $cubic;
+
+    font-size: toRem(16);
+
+    margin-top: toRem(16);
+
+    @include ms(mob-m) {
+        font-size: toRem(18);
+    }
+    @include ms(mob-l) {
+        font-size: toRem(20);
+    }
+    @include ms(tab-s) {
+        font-size: toRem(24);
+        margin-top: toRem(28);
+    }
+
+    &:hover {
+        background-color: var(--bg-hover);
+        border-color: var(--bg-hover);
+        color: var(--text-primary);
+    }
+
+    &:focus {
+        outline: 2px solid var(--text-accent);
+        outline-offset: 2px;
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+[class*='__btn--modal'] {
+    width: 100%;
+    // margin: 0 auto;
+}
