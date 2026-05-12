@@ -18,6 +18,28 @@ function closeModal() {
     }
 }
 
+// Спроба відкрити додаток, з fallback на веб-лінк
+function openDeepLink(event) {
+    event.preventDefault()
+    const appUrl = this.dataset.app
+    const webUrl = this.dataset.web || this.href
+
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+    if (isMobile && appUrl) {
+        window.location = appUrl
+        setTimeout(() => {
+            window.location = webUrl
+        }, 800)
+    } else {
+        window.location = webUrl
+    }
+
+    closeModal()
+}
+
+const appLinks = document.querySelectorAll('.modal__btn--modal[data-app]')
+appLinks.forEach((link) => link.addEventListener('click', openDeepLink))
+
 // Обробка кнопки назад браузера
 window.addEventListener('popstate', (event) => {
     if (modal.style.display === 'block') {
