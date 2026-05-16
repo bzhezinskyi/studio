@@ -21,8 +21,12 @@ function renderCourses(coursesData) {
 
         const summary = document.createElement('summary')
         summary.className = 'course__subtitle'
-        summary.textContent = course.name
-
+        summary.innerHTML = `
+    <svg class="course__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M8 5v14l11-7z"/>
+    </svg>
+    <span>${course.name}</span>
+`
         details.appendChild(summary)
 
         // Генеруємо вміст курсу
