@@ -393,4 +393,61 @@ body {
 }
 .course__item {
   margin-top: 0.875rem;
+}
+.gallery {
+  padding: 2rem 0;
+}
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 1rem auto;
+  padding: 0 0.625rem;
+  box-sizing: border-box;
+}
+@media (min-width: 30rem) {
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+}
+@media (min-width: 48rem) {
+  .gallery__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 0;
+    margin: 1.75rem auto;
+  }
+}
+.gallery__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  max-width: 100%;
+}
+.gallery__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+}
+.gallery__img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  border-radius: 0.75rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.gallery__img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,48 @@
+{
+    "result": {
+        "id": "result",
+        "heading": "Роботи учениць",
+        "content": [
+            "./image/photo/result/IMG_0340.jpg",
+            "./image/photo/result/IMG_0363.jpg",
+            "./image/photo/result/IMG_0454.jpg",
+            "./image/photo/result/IMG_0689.jpg",
+            "./image/photo/result/IMG_1013.jpg",
+            "./image/photo/result/IMG_1037.jpg",
+            "./image/photo/result/IMG_1051.jpg",
+            "./image/photo/result/IMG_1632.jpg",
+            "./image/photo/result/IMG_1651.jpg",
+            "./image/photo/result/IMG_1883.jpg",
+            "./image/photo/result/IMG_1976.jpg",
+            "./image/photo/result/IMG_2011.jpg",
+            "./image/photo/result/IMG_2056.jpg",
+            "./image/photo/result/IMG_2466.jpg",
+            "./image/photo/result/IMG_2506.jpg",
+            "./image/photo/result/IMG_2520.jpg",
+            "./image/photo/result/IMG_2575.jpg",
+            "./image/photo/result/IMG_4565.jpg",
+            "./image/photo/result/IMG_5284.jpg",
+            "./image/photo/result/IMG_6402.jpg",
+            "./image/photo/result/IMG_8453.jpg",
+            "./image/photo/result/IMG_8522.jpg"
+        ]
+    },
+    "student": {
+        "id": "student",
+        "heading": "Мої учениці",
+        "content": [
+            "./image/photo/student/IMG_0377.jpg",
+            "./image/photo/student/IMG_0564.jpg",
+            "./image/photo/student/IMG_0936.jpg",
+            "./image/photo/student/IMG_1057.jpg",
+            "./image/photo/student/IMG_1655.jpg",
+            "./image/photo/student/IMG_1753.jpg",
+            "./image/photo/student/IMG_2063.jpg",
+            "./image/photo/student/IMG_3296.jpg",
+            "./image/photo/student/IMG_4569.jpg",
+            "./image/photo/student/IMG_5346.jpg",
+            "./image/photo/student/IMG_6466.jpg",
+            "./image/photo/student/IMG_8573.jpg"
+        ]
+    }
+}
