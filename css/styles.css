@@ -384,8 +384,12 @@ body {
   min-height: 100vh;
   position: relative;
 }
+.hero__txt {
+  margin-top: 0.5rem;
+}
 @media (min-width: 48rem) {
   .hero__txt {
+    margin-top: 0.75rem;
     width: 60%;
   }
 }

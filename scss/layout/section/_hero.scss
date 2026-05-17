@@ -10,7 +10,10 @@
     &__subtitle {
     }
     &__txt {
+        margin-top: toRem(8);
+
         @include ms(tab-s) {
+            margin-top: toRem(12);
             width: 60%;
         }
     }
