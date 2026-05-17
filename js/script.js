@@ -66,7 +66,3 @@ function renderCourses(coursesData) {
 
 // Завантажуємо курси при завантаженні сторінки
 document.addEventListener('DOMContentLoaded', loadCourses)
-
-document.getElementById('myButton').addEventListener('click', function () {
-    alert('Привіт! Ти натиснув кнопку.')
-})

@@ -1,0 +1,65 @@
+.back-to-top {
+    position: fixed;
+    bottom: toRem(30);
+    right: toRem(30);
+    width: toRem(50);
+    height: toRem(50);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border: 1px solid var(--bg-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+
+    // Твоя фірмова тінь
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
+
+    // Початковий стан — прихована
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity $cubic,
+        visibility $cubic,
+        background-color $cubic,
+        color $cubic;
+    z-index: 99;
+
+    &:hover {
+        background-color: var(--bg-primary);
+        color: var(--text-hover);
+    }
+
+    svg {
+        width: toRem(36);
+        height: toRem(36);
+        transition: transform $cubic;
+        flex-shrink: 0;
+        fill: currentColor;
+        transform: rotate(-90deg);
+    }
+
+    &:hover svg {
+        transform: translateY(
+            rotate(-90deg),
+            toRem(-2)
+        ); // легкий ефект підстрибування при ховері
+    }
+
+    // Адаптивність під мобільні
+    @include ms(mob-m) {
+        bottom: toRem(20);
+        right: toRem(20);
+        width: toRem(44);
+        height: toRem(44);
+    }
+}
+
+// Клас, який додаватиметься через JS при скролі
+.back-to-top--show {
+    opacity: 1;
+    visibility: visible;
+}

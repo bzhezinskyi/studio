@@ -5,14 +5,14 @@ const closeBtn = document.querySelector('.modal__close')
 // Функція для відкриття модального вікна
 function openModal() {
     modal.style.display = 'block'
-    // Додаємо стан в історію для обробки кнопки назад
+    document.body.style.overflow = 'hidden' // Блокуємо скрол сторінки
     history.pushState({ modalOpen: true }, '')
 }
 
 // Функція для закриття модального вікна
 function closeModal() {
     modal.style.display = 'none'
-    // Очищаємо стан, якщо він є
+    document.body.style.overflow = '' // Повертаємо скрол сторінки
     if (history.state && history.state.modalOpen) {
         history.replaceState(null, '')
     }

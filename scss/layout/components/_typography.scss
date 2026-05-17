@@ -47,6 +47,10 @@
         margin-top: toRem(28);
     }
 }
+[class*='__subtitle--dark'] {
+    color: var(--text-primary);
+    text-shadow: none;
+}
 [class*='__txt'] {
     font-size: toRem(16);
 
